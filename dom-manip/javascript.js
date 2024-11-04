@@ -23,7 +23,18 @@ divBlack.appendChild(h1P)
 divBlack.appendChild(divP)
 container.appendChild(divBlack);
 
+const btn = document.querySelector("#better-button");
+btn.onclick = () => alert("Hello World BETTER");
 
+const btn1 = document.querySelector("#best-button");
+btn1.addEventListener("click", () => {
+    alert("Hello World BEST!");
+});
+
+const btn2 = document.querySelector("#callback-button")
+btn2.addEventListener("click", function(e){
+    e.target.style.background = "blue";
+});
 // a <p> with red text that says “Hey I’m red!”
 // an <h3> with blue text that says “I’m a blue h3!”
 // a <div> with a black border and pink background color with 
